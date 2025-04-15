@@ -2,7 +2,7 @@ name: Sync Supabase Facts to Pinecone
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # ogni giorno alle 6 UTC
+    - cron: '*/10 * * * *'
   workflow_dispatch:      # eseguibile anche manualmente
 
 jobs:
